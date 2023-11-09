@@ -18,7 +18,7 @@ function Welcome() {
                     <Row>
                         <Col></Col>
                         <Col>
-                            <span className='primary-color' style={{ fontSize: 19 }}>geraldasuncionarron1997@gmail.com</span>
+                            {/*<span className='primary-color' style={{ fontSize: 19 }}>geraldasuncionarron1997@gmail.com</span>*/}
                         </Col>
                     </Row>
                 </div>
@@ -38,12 +38,11 @@ function Welcome() {
         <Col></Col>
         <Col>
             <Stack gap={5}>
-                <div className="p-4"></div>
                 <div className="p-4">
-                    <span className='secondary-color' style={{ fontSize: 30 }}>Phone Number: +39 3282636956</span>        
+                    {/*<span className='secondary-color' style={{ fontSize: 30 }}>Phone Number: +39 3282636956</span>*/}        
                 </div>
                 <div className="p-4">
-                    <span className='primary-color' style={{ fontSize: 30, marginLeft: "auto", marginRight: "auto" }}>I create simple website and <br />Apps. And I love what I do</span>
+                    <span className='primary-color' style={{ fontSize: 40, marginLeft: "auto", marginRight: "auto" }}>I create simple website and <br />Apps. And I love what I do</span>
                 </div>
             </Stack>
         </Col>
