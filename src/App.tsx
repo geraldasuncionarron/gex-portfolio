@@ -26,13 +26,22 @@ function App() {
         <Row>
           <Col md="auto">
             <Stack gap={3}>
-              <div className="p-2">First item</div>
+              <div className="p-2">
+                
+              </div>
               <div className="p-2">Second item</div>
               <div className="p-2">Third item</div>
             </Stack>
           </Col>
           <Col></Col>
-          <Col></Col>
+          <Col md="auto">
+            <title>What do I help?</title>
+            <p>
+              I will help you with finding a solution and resolve your problems. We use coding to create the best products. Besides that also help their business.
+              <br></br>
+              Let's collaborate so we can have a successfull business together
+            </p>
+          </Col>
         </Row>
       </Container>
     </>
