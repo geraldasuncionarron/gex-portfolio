@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/main.component';
+import Welcome from './components/welcome.component';
+import NavbarHeader from './components/navbar.component';
+import { Col, Container, Row, Stack } from 'react-bootstrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Main>
+        <NavbarHeader />
+        <Welcome />
+      </Main>
+      <div className='Profile'>
+      <img
+                    alt="profilo"
+                    src="./assets/images/profile.png"
+                    className='Profile-img'
+                />
+      </div>
+
+      <Container>
+
+        <Row>
+          <Col md="auto">
+            <Stack gap={3}>
+              <div className="p-2">First item</div>
+              <div className="p-2">Second item</div>
+              <div className="p-2">Third item</div>
+            </Stack>
+          </Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
+      </Container>
+    </>
+
   );
 }
 
