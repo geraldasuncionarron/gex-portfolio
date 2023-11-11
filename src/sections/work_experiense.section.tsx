@@ -5,7 +5,7 @@ function WorkExperience() {
     return(
         <div style={{ backgroundColor: "#F0EFED"}} id="work-experience">
             <Container className="Section">
-                <h1 style={{ textAlign: "center", fontSize: 48 }}>My Work Experience</h1>
+                <h1 className="Title">My Work Experience</h1>
                 <VerticalBullet />
             </Container>
         </div>

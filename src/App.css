@@ -106,3 +106,64 @@ li.Bullet:before{
   z-index: 400;
   margin-top: 8px;
 }
+
+.Title {
+  text-align: center;
+  font-size: 48px;
+}
+
+.Subtitle {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.Card-scroll {
+  overflow-x: scroll;
+  overflow: hidden;
+  margin-top: 50px; 
+  display: inline-flex;
+  width: 100%;
+}
+
+.Card-container {
+  width: 300px; 
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Card-img-profile {
+  width: 100%;
+  position: static;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+}
+
+.Card {
+  position: static;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+}
+
+.Card-button-container {
+  text-align: center;
+  display: inline-flex;
+  column-gap: 20px;  /* Set a gap of 20px */
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Card-button {
+  text-align: center;
+  border-radius: 50%;
+}
