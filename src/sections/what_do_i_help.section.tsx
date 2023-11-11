@@ -1,9 +1,10 @@
 import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import IconList from "../components/icon_list.component";
+import { forwardRef } from "react";
 
-function WhatDoIHelp () {
+function WhatDoIHelp ({}, ref: any) {
     return (
-        <Container className="Section">
+        <Container className="Section" ref={ref}>
             <Row>
                 <Col sm={6}>
                     <ListGroup as="ol">
@@ -87,4 +88,4 @@ function WhatDoIHelp () {
     )
 }
 
-export default WhatDoIHelp;
+export default forwardRef(WhatDoIHelp);

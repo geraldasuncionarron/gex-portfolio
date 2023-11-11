@@ -127,15 +127,27 @@ li.Bullet:before{
 }
 
 .Card-container {
-  width: 300px; 
-  margin-top: 50px; 
-  margin-bottom: 50px;
+  margin-top: 100px; 
+  margin-bottom: 100px;
+  width: 100%;
   margin-left: 100px;
   margin-right: 100px;
+  transition: transform .2s;
+}
+
+.Card-active {
+  transform: scale(1.5);
+}
+
+.Card-container:last-child {
+  margin-right: 400px;
+}
+
+.Card-container:first-child {
+  margin-left: 400px;
 }
 
 .Card-img-profile {
-  width: 100%;
   position: static;
   border-radius: 50%;
   width: 80px;
@@ -152,7 +164,10 @@ li.Bullet:before{
   margin-left: auto;
   margin-right: auto;
   margin-top: -40px;
+  min-width: 500px;
 }
+
+
 
 .Card-button-container {
   text-align: center;

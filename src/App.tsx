@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './App.css';
 import Main from './components/main.component';
 import NavbarHeader from './components/navbar.component';
@@ -10,10 +11,51 @@ import WorkExperience from './sections/work_experiense.section';
 
 
 function App() {
+  const refService = useRef(null);
+  const refAboutMe = useRef(null);
+  const refWorks = useRef(null);
+  const refExperiences = useRef(null);
+
+  function onNavigate(section: string) {
+    console.log("section", section)
+    switch (section) {
+      case "Service":
+        (refService.current as any).scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+        });
+        break;
+      case "About me":
+        (refAboutMe.current as any).scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+        });
+        break;
+      case "Works":
+        (refWorks.current as any).scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+        });
+        break;
+      case "Experiences":
+        (refExperiences.current as any).scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+        });
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
     <>
       <Main>
-        <NavbarHeader />
+        <NavbarHeader onNavigate={onNavigate}/>
         <Welcome />
       </Main>
       <div className='Profile'>
@@ -23,11 +65,11 @@ function App() {
             className='Profile-img'
         />
       </div>
-      <WhatDoIHelp />
-      <WorkExperience />
-      <MyLatestWork />
-      <Feedback />
-      <Footer />
+      <WhatDoIHelp ref={refService}/>
+      <WorkExperience ref={refExperiences}/>
+      <MyLatestWork ref={refWorks}/>
+      <Feedback ref={refAboutMe}/>
+      <Footer onNavigate={onNavigate}/>
     </>
 
   );

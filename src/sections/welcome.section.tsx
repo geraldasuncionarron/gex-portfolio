@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Col, Row, Stack } from 'react-bootstrap';
 
-function Welcome() {
+function Welcome({}: any, ref: any) {
     return (
-        <Row>
+        <Row id="home" ref={ref}>
         <Col style={{ verticalAlign: "center" }}>
             <Stack gap={3}>
                 <div className="p-2">
@@ -50,4 +50,4 @@ function Welcome() {
     );
   }
   
-  export default Welcome;
+  export default forwardRef(Welcome);
