@@ -24,15 +24,10 @@ function Feedback({}, ref: any) {
     const [counter, setCounter] = useState(0);
 
     const [cards] = useState([...allCards]);
-
-    useEffect(() => {
-        scrollToIndex("add");
-    }, [])
     
     function scrollToIndex(operation: string) {
         if(refCards.current) {
             const listNode: any = refCards.current;
-            console.log("counter", operation, counter, allCards.length);
             let newCounter = counter
             if(operation === "add" && counter < (allCards.length - 1)) {
                 newCounter = counter === -1 ? 1 : counter + 1;
@@ -41,12 +36,9 @@ function Feedback({}, ref: any) {
                 newCounter = counter - 1;
              } 
 
-             console.log("newCounter", newCounter);
             if(newCounter > -1) {
                 const cardList = listNode.querySelectorAll('.Card-container') as NodeList;
-                console.log("list", cardList);
                 const cardNode = cardList[newCounter] as HTMLInputElement;
-                console.log("card selected", cardList[newCounter]);
                 for (let i = 0; i < allCards.length; i++) {
                     const element = cardList[i] as HTMLInputElement
                     element.classList.remove("Card-active")
