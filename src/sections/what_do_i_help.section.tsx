@@ -1,5 +1,5 @@
 import { Col, Container, ListGroup, Row } from "react-bootstrap";
-import IconList from "../components/icon_list.component";
+import IconList from "../pages/browser/components/icon_list.browser.component";
 import { forwardRef } from "react";
 
 function WhatDoIHelp ({}, ref: any) {

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
-import Main from '../../components/main.component';
-import NavbarHeader from '../../components/navbar.component';
+import Parallax from './components/parallax.browser.component';
+import NavbarHeader from './components/navbar.browser.component';
 import Feedback from '../../sections/feedback.section';
 import Footer from '../../sections/footer.section';
 import MyLatestWork from '../../sections/my_latest_works.section';
@@ -16,7 +16,6 @@ function Home () {
     const refExperiences = useRef(null);
   
     function onNavigate(section: string) {
-      console.log("section", section)
       switch (section) {
         case "Service":
           (refService.current as any).scrollIntoView({
@@ -25,6 +24,7 @@ function Home () {
               inline: 'center'
           });
           break;
+        /*
         case "About me":
           (refAboutMe.current as any).scrollIntoView({
               behavior: 'smooth',
@@ -39,6 +39,7 @@ function Home () {
               inline: 'center'
           });
           break;
+        */
         case "Experiences":
           (refExperiences.current as any).scrollIntoView({
               behavior: 'smooth',
@@ -53,10 +54,10 @@ function Home () {
 
     return(
         <>
-            <Main>
+            <Parallax>
             <NavbarHeader onNavigate={onNavigate}/>
             <Welcome />
-            </Main>
+            </Parallax>
             <div className='Profile'>
             <img
                 alt="profilo"

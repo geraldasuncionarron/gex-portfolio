@@ -1,10 +1,13 @@
-import { faComputer, faMobile, faServer, faDatabase, faEnvelope, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faComputer, faMobile, faServer, faDatabase, faEnvelope, faArrowRight, faArrowLeft, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faReact, faAppStore, faGooglePlay, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function getIconByName (name: string) {
     let icon = faReact;
     switch (name) {
+        case "hamburger":
+            icon = faBars;
+            break;
         case "email":
             icon = faEnvelope;
             break;

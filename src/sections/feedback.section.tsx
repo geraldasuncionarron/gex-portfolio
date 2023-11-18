@@ -1,5 +1,5 @@
 import { Button, Card } from "react-bootstrap";
-import Icon from "../components/icon.component";
+import Icon from "../pages/browser/components/icon.browser.component";
 import { forwardRef, useEffect, useRef, useState } from "react";
 
 const allCards = [{

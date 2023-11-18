@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import getIconByName from "../config/icons.config"
+import getIconByName from "../../../config/icons.config"
 
 function Icon ({ name, color = "#212529", size="3x" }: any) {
 

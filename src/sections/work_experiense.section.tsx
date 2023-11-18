@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import VerticalBullet from "../components/vertical_bullet.component";
+import VerticalBullet from "../pages/browser/components/vertical_bullet.browser.component";
 import { forwardRef } from "react";
 
 function WorkExperience({}, ref: any) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Main({ children }: any) {
+function Parallax({ children }: any) {
     return (
         <div style={{
             backgroundImage: "url('./assets/images/splash.jpg')",
@@ -14,4 +14,4 @@ function Main({ children }: any) {
     );
   }
   
-  export default Main;
+  export default Parallax;

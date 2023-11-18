@@ -58,8 +58,8 @@ a {
 }
 
 .Section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .Icon-container {
@@ -189,4 +189,61 @@ li.Bullet:before{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
+}
+
+.parallax-bg:before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, black);
+  opacity: 2.5; 
+  height:100%;
+  width:100%;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+
+/* Adjust the styling for mobile devices */
+@media only screen and (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+.vertical-center {
+  display: grid;
+  place-items: center
+}
+
+.link-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 130px; 
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }

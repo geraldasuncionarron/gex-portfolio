@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import BrowserHome from './pages/browser/Home.browser.page';
 import MobileHome from './pages/mobile/Home.mobile.page';
