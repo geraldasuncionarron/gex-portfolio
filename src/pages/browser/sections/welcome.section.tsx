@@ -55,8 +55,8 @@ function Welcome({}: any, ref: any) {
                         </Stack>
                     </Col>
                 </Row>
-                <div className='d-flex d-lg-none'>
-                    <Container>
+                <div className='d-lg-none'>
+                    <Container className='d-flex' style={{ paddingBottom: 50 }}>
                         <div>
                             <img
                                 alt="profilo"
