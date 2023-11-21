@@ -22,7 +22,7 @@ const ListGroupData = [{
     iconName: "server", 
     iconColor: "white", 
     iconBackgroundColor: "#F26440", 
-    title: "Mobile", 
+    title: "Backend", 
     description: "Develop Backend secure and clean code",
     subdescription: "Tech stack: NodeJS, NestJS, Express.js, APIs, puppeteer"
 },{

@@ -14,7 +14,7 @@ function List ({ data }: any) {
                             boxShadow: "0px 5px 10px rgba(0,0,0,0.1)"
                         }}
                     >
-                        <IconList props={{ name: iconName }} style={{
+                        <IconList name={iconName} style={{
                             color: iconColor,
                             backgroundColor: iconBackgroundColor
                         } }/>
