@@ -3,9 +3,11 @@ import Icon from "../pages/browser/components/icon.browser.component";
 import { Link } from "react-router-dom";
 import { BLACK } from "../config/colors.config";
 import { isBrowser } from "react-device-detect";
+import { useEffect, useRef, useState } from "react";
 
 function Footer({ dark, onNavigate }: any) {
     const color = dark ? "white" : BLACK;
+    
     return(
         <Container className="Section" style={{ backgroundColor: dark ? BLACK : "#fff"}}>
             <Row>
@@ -27,7 +29,7 @@ function Footer({ dark, onNavigate }: any) {
                         </div>
 
                         <div style={{ display: "inline-flex", justifyContent: "space-between", minWidth: 250, width: "50%"}}>
-                            <Link to="mailto: geraldasuncionarron@gmail.com"><Icon name="email" /></Link>
+                            <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" /></Link>
                             <Link to="https://www.linkedin.com/in/geraldasuncion/"><Icon name="linkedin" /></Link>
                             <Link to="https://www.instagram.com/gex_asuncion/"><Icon name="instagram" /></Link>
                             <Link to="https://github.com/geraldasuncionarron"><Icon name="github" /></Link>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -9,8 +9,24 @@ import Waiting from './pages/Waiting.page';
 
 function App() {
   const [active, setActive] = useState(true)
+  const [width, setWidth] = useState(0);
+  const elementRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      console.log((elementRef.current as any).offsetWidth)
+      setWidth((elementRef.current as any).offsetWidth)
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
-    <>
+    <div ref={elementRef}>
       {
         active ?
         <> 
@@ -23,7 +39,7 @@ function App() {
         </>
           : <Waiting />
       }
-    </>
+    </div>
 
   );
 }
