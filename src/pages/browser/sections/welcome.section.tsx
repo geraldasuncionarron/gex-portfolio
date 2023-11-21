@@ -38,7 +38,7 @@ function Welcome({}: any, ref: any) {
                         </div>
                     </Col>
                     <Col lg={4}>
-                        <Stack gap={5} style={{ paddingLeft: "20%" }}>
+                        <Stack gap={5}>
                             <Container>
                                 <div style={{ display: "inline-flex", justifyContent: "space-between", minWidth: 250, width: "50%"}}>
                                     <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" /></Link>
