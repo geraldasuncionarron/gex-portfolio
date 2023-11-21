@@ -1,5 +1,5 @@
 import { Button, Card } from "react-bootstrap";
-import Icon from "../pages/browser/components/icon.browser.component";
+import Icon from "../components/icon.browser.component";
 import { forwardRef, useEffect, useRef, useState } from "react";
 
 const allCards = [{
@@ -66,7 +66,7 @@ function Feedback({}, ref: any) {
                     <div className="Card-scroll" ref={refCards}>
                         {
                             cards.map((card, i: number) =>  (
-                                <div className="Card-container">
+                                <div className="Card-container" style={{ marginLeft: 100, marginRight: 100 }}>
                                     <Card.Img src={card.img} className="Card-img-profile"/>
                                     <Card className="Card">    
                                         <Card.Body style={{ minWidth: 400 }}>

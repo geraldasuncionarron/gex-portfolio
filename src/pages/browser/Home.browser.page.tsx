@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import Footer from '../../sections/footer.section';
-import Welcome from '../../sections/welcome.section';
+import Footer from './sections/footer.section';
+import Welcome from './sections/welcome.section';
 import WelcomeMobile from '../../pages/mobile/sections/welcome.mobile.section';
-import WhatDoIHelp from '../../sections/what_do_i_help.section';
-import WorkExperience from '../../sections/work_experiense.section';
+import WhatDoIHelp from './sections/what_do_i_help.section';
+import WorkExperience from './sections/work_experiense.section';
 
 function Home () {
     const refService = useRef(null);

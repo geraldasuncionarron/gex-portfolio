@@ -7,7 +7,6 @@ function Parallax({ children }: any) {
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
             width: "100%",
-            height: 800,
             backgroundSize: "cover"
           }}> {children}
         </div>

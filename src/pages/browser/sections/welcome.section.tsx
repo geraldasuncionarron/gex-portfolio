@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
-import { Col, Container, Row, Stack } from 'react-bootstrap';
-import Parallax from '../pages/browser/components/parallax.browser.component';
-import NavbarHeader from '../pages/browser/components/navbar.browser.component';
-import Icon from '../pages/browser/components/icon.browser.component';
+import { Col, Container, Row, Stack, Image } from 'react-bootstrap';
+import Parallax from '../components/parallax.browser.component';
+import NavbarHeader from '../components/navbar.browser.component';
+import Icon from '../components/icon.browser.component';
 import { Link } from 'react-router-dom';
-import { BLACK, GRAY } from '../config/colors.config';
+import { BLACK, GRAY } from '../../../config/colors.config';
 
 
 function Welcome({}: any, ref: any) {
@@ -13,7 +13,7 @@ function Welcome({}: any, ref: any) {
             <Parallax>
                 <NavbarHeader />
                 <Row id="home" ref={ref} className='d-none d-lg-flex'>
-                    <Col style={{ verticalAlign: "center" }}>
+                    <Col lg={4} style={{ verticalAlign: "center" }}>
                         <Stack gap={3} style={{ paddingLeft: "40%" }}>
                             <div className="p-2">
                                 <div style={{ minWidth: 280, display: "inline-flex", float: "right" }}>
@@ -28,8 +28,16 @@ function Welcome({}: any, ref: any) {
                             </div>
                         </Stack>     
                     </Col>
-                    <Col></Col>
-                    <Col>
+                    <Col lg={4}>
+                        <div className='Profile d-none d-lg-block'>
+                            <Image
+                                fluid
+                                alt="profilo"
+                                src="./assets/images/profile.svg"
+                                />
+                        </div>
+                    </Col>
+                    <Col lg={4}>
                         <Stack gap={5} style={{ paddingLeft: "20%" }}>
                             <Container>
                                 <div style={{ display: "inline-flex", justifyContent: "space-between", minWidth: 250, width: "50%"}}>
@@ -47,37 +55,30 @@ function Welcome({}: any, ref: any) {
                         </Stack>
                     </Col>
                 </Row>
-                <Container className='d-lg-none d-flex'>
-                    <div>
-                        <img
-                            alt="profilo"
-                            src="./assets/images/profile.png"
-                            className='Profile-avatar'
-                        />
-                    </div>
+                <div className='d-flex d-lg-none'>
                     <Container>
-                        <h1>Gerald Asuncion</h1>
-                        <p style={{ fontSize: "2vw", color: "white" }}>Full-Stack Developer</p>
-                        <p style={{ fontSize: "2vw", color: "white" }}>8 years of experience</p>
-                        <p style={{ fontSize: "2vw", color: "white" }}>I create website and Apps. And I love what I do</p>
-                        <div style={{ display: "inline-flex", justifyContent: "space-between", minWidth: 250, width: "50%"}}>
-                            <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" color={"white"} /></Link>
-                            <Link to="https://www.linkedin.com/in/geraldasuncion/"><Icon name="linkedin" color={"white"} /></Link>
-                            <Link to="https://www.instagram.com/gex_asuncion/"><Icon name="instagram" color={"white"} /></Link>
-                            <Link to="https://github.com/geraldasuncionarron"><Icon name="github" color={"white"} /></Link>
+                        <div>
+                            <img
+                                alt="profilo"
+                                src="./assets/images/profile.png"
+                                className='Profile-avatar'
+                            />
                         </div>
+                        <Container>
+                            <h1>Gerald Asuncion</h1>
+                            <p style={{ fontSize: "2vw", color: "white" }}>Full-Stack Developer</p>
+                            <p style={{ fontSize: "2vw", color: "white" }}>8 years of experience</p>
+                            <p style={{ fontSize: "2vw", color: "white" }}>I create website and Apps. And I love what I do</p>
+                            <div style={{ display: "inline-flex", justifyContent: "space-between", minWidth: 250, width: "50%"}}>
+                                <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" color={"white"} /></Link>
+                                <Link to="https://www.linkedin.com/in/geraldasuncion/"><Icon name="linkedin" color={"white"} /></Link>
+                                <Link to="https://www.instagram.com/gex_asuncion/"><Icon name="instagram" color={"white"} /></Link>
+                                <Link to="https://github.com/geraldasuncionarron"><Icon name="github" color={"white"} /></Link>
+                            </div>
+                        </Container>
                     </Container>
-                </Container>
+                </div>
             </Parallax>
-            <div className='Profile d-none d-lg-block'>
-                <img
-                    alt="profilo"
-                    src="./assets/images/profile.svg"
-                    className='Profile-img'
-                    width={100}
-                    height={100}
-                    />
-            </div>
         </>
 
     );

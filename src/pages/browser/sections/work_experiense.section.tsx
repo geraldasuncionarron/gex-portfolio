@@ -1,7 +1,7 @@
 import { Container, Fade } from "react-bootstrap";
-import VerticalBullet from "../pages/browser/components/vertical_bullet.browser.component";
+import VerticalBullet from "../components/vertical_bullet.browser.component";
 import { forwardRef, useEffect, useState } from "react";
-import { BLACK } from "../config/colors.config";
+import { BLACK } from "../../../config/colors.config";
 
 function WorkExperience({}, ref: any) {
     

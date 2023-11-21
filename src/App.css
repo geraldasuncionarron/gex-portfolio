@@ -49,18 +49,11 @@ a {
 }
 
 .Profile {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .Profile-img {
   width: auto;
-  height: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .Profile-avatar {
@@ -136,7 +129,6 @@ li.Bullet:before{
 
 .Card-scroll {
   overflow-x: scroll;
-  overflow: hidden;
   margin-top: 50px; 
   display: inline-flex;
   width: 100%;
@@ -146,8 +138,6 @@ li.Bullet:before{
   margin-top: 100px; 
   margin-bottom: 100px;
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
   transition: transform .2s;
 }
 
