@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import Footer from './sections/footer.section';
 import Welcome from './sections/welcome.section';
-import WelcomeMobile from '../../pages/mobile/sections/welcome.mobile.section';
 import WhatDoIHelp from './sections/what_do_i_help.section';
 import WorkExperience from './sections/work_experiense.section';
+import MyLatestWork from './sections/my_latest_works.section';
 
 function Home () {
     const refService = useRef(null);
@@ -53,7 +53,7 @@ function Home () {
             <Welcome />
             <WhatDoIHelp ref={refService}/>
             <WorkExperience ref={refExperiences}/>
-            {/*<MyLatestWork ref={refWorks}/>*/}
+            <MyLatestWork ref={refWorks}/>
             {/*<Feedback ref={refAboutMe}/>*/}
             <Footer onNavigate={onNavigate}/>
         </>

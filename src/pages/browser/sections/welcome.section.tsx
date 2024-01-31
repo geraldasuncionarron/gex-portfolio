@@ -4,7 +4,6 @@ import Parallax from '../components/parallax.browser.component';
 import NavbarHeader from '../components/navbar.browser.component';
 import Icon from '../components/icon.browser.component';
 import { Link } from 'react-router-dom';
-import { BLACK, GRAY } from '../../../config/colors.config';
 
 
 function Welcome({}: any, ref: any) {
@@ -44,7 +43,7 @@ function Welcome({}: any, ref: any) {
                                     <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" /></Link>
                                     <Link to="https://www.linkedin.com/in/geraldasuncion/"><Icon name="linkedin" /></Link>
                                     <Link to="https://www.instagram.com/gex_asuncion/"><Icon name="instagram" /></Link>
-                                    <Link to="https://github.com/geraldasuncionarron"><Icon name="github" /></Link>
+                                    <Link to="https://github.com/GexDevCode"><Icon name="github" /></Link>
                                 </div>
                                 {/*<span className='secondary-color' style={{ fontSize: 30 }}>Phone Number: +39 3282636956</span>*/}        
                             </Container>

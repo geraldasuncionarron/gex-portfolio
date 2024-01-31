@@ -25,7 +25,7 @@ function Footer({ dark, onNavigate }: any) {
                             <Link to="mailto: gexdevcode@gmail.com"><Icon name="email" /></Link>
                             <Link to="https://www.linkedin.com/in/geraldasuncion/"><Icon name="linkedin" /></Link>
                             <Link to="https://www.instagram.com/gex_asuncion/"><Icon name="instagram" /></Link>
-                            <Link to="https://github.com/geraldasuncionarron"><Icon name="github" /></Link>
+                            <Link to="https://github.com/GexDevCode"><Icon name="github" /></Link>
                         </div>
                     </Container>
                 </Col>

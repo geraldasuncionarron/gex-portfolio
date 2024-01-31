@@ -41,7 +41,6 @@ function WhatDoIHelp ({}, ref: any) {
 
     useEffect(() => {
         const onScroll = (e: any) => {
-            console.log(ref);
             setScrollTop(e.target.documentElement.scrollTop);
             setScrolling(ref.current.offsetTop - (ref.current.clientHeight/2) > e.target.documentElement.scrollTop);
         };

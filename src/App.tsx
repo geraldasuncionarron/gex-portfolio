@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import 'charts.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import BrowserHome from './pages/browser/Home.browser.page';
@@ -14,7 +15,6 @@ function App() {
 
   useLayoutEffect(() => {
     const handleResize = () => {
-      console.log((elementRef.current as any).offsetWidth)
       setWidth((elementRef.current as any).offsetWidth)
     };
     handleResize();
