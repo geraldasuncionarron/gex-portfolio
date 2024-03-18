@@ -1,4 +1,4 @@
-import { faComputer, faMobile, faServer, faDatabase, faEnvelope, faArrowRight, faArrowLeft, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faComputer, faMobile, faServer, faDatabase, faEnvelope, faArrowRight, faArrowLeft, faBars, faComment, faPaperPlane, faUser, faBell, faStar, faHome, faUserSecret, faPlus, faGear, faX } from '@fortawesome/free-solid-svg-icons'
 import { faReact, faAppStore, faGooglePlay, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -46,6 +46,36 @@ export default function getIconByName (name: string) {
             break;
         case "arrow-left":
             icon = faArrowLeft;
+            break;
+        case "comment":
+            icon = faComment;
+            break;
+        case "send":
+            icon = faPaperPlane;
+            break;
+        case "user":
+            icon = faUser;
+            break;
+        case "notification":
+            icon = faBell;
+            break;
+        case "star":
+            icon = faStar;
+            break;
+        case "home":
+            icon = faHome;
+            break;
+        case "agent":
+            icon = faUserSecret;
+            break;
+        case "plus":
+            icon = faPlus;
+            break;
+        case "settings":
+            icon = faGear;
+            break;
+        case "x":
+            icon = faX;
             break;
         default:
             break;

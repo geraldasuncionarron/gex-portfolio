@@ -1,18 +1,5 @@
-.App {
-  text-align: center;
-  color: white;
-}
-
-h1,  h2, h3, p, span {
-  color: white;
-}
-
 .primary-color {
   color: rgb(234, 76, 255);
-}
-
-.secondary-color {
-  color: white;
 }
 
 a {
@@ -41,6 +28,18 @@ a {
 
 .Nav-title:hover {
   color: rgb(234, 76, 255);
+}
+
+.bg_active {
+  background: rgb(31,82,195);
+  background: linear-gradient(103deg, rgba(31,82,195,1) 19%, rgba(86,139,219,1) 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bg_active > a {
+  color: white;
 }
 
 .Logo {
@@ -307,4 +306,24 @@ li.Bullet:before{
   0%   { box-shadow: none; }
   50%  { box-shadow: 0 0 1px 0 black, 0 0 20px 5px darkgrey; }
   100% { box-shadow: none; }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cacaca; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cacaca; 
 }
